@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import styled from "styled-components";
@@ -41,7 +42,7 @@ function Header() {
             />
           </IconButton>
           <IconButton>
-            <Avatar src="./images/cat.jpg" size />
+            <Avatar src="./images/cat.jpg" />
           </IconButton>
         </MenuLeft>
       </Nav>
@@ -62,7 +63,7 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  position: fixed;
+  position: relative;
   top: 0;
 `;
 
