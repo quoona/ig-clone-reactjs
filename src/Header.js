@@ -53,18 +53,17 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  width: 100%;
+  // width: 100%;
   height: 35px;
   padding: 10px;
   margin: auto;
-
+  overflow: hidden;
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   position: relative;
-  top: 0;
 `;
 
 const SearchInput = styled.div`
@@ -89,6 +88,8 @@ const MenuLeft = styled.div``;
 const Nav = styled.div`
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
   width: 80%;
   justify-content: space-around;
 `;

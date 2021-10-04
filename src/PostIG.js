@@ -45,7 +45,7 @@ function PostIG({ profilePic, message, username, image }) {
         <span>
           <MoodIcon />
         </span>
-        <input type="text" placeholder="Comment Something" />
+        <input type="text" placeholder="Comment đi và bạn sẽ lên tivi" />
       </PostComment>
     </Post>
   );

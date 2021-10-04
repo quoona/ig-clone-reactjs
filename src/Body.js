@@ -3,6 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import Story from "./Story";
 import PostIG from "./PostIG";
+import SidebarRow from "./SidebarRow";
+import SidebarRowBottom from "./SidebarRowBottom";
 function Body() {
   return (
     <Container>
@@ -23,11 +25,53 @@ function Body() {
             username="cat two"
             image="./images/cheems.jpg"
           />
-          <PostIG />
-          <PostIG />
-          <PostIG />
+          <PostIG
+            profilePic="./images/cat.jpg"
+            message="Hello"
+            username="cat two"
+            image="./images/cheems.jpg"
+          />
+          <PostIG
+            profilePic="./images/cheems_2.jpg"
+            message="Hello"
+            username="cat two"
+            image="./images/way.jpg"
+          />
+          <PostIG
+            profilePic="./images/cat_2.jpg"
+            message="Hello"
+            username="cheems"
+            image="./images/cheems_3.jpg"
+          />
         </ContentLeft>
-        <ContentRight></ContentRight>
+        <ContentRight>
+          <SidebarRow
+            profilePic="./images/cat.jpg"
+            title="Nguyen Quoc Nam"
+            username="quoonaa"
+          />
+
+          <SidebarRowBottom
+            friendUsername="Cheems"
+            profileFriendPic="./images/cheems_3.jpg"
+            follows="follows you"
+          />
+          <SidebarRowBottom
+            friendUsername="Joker"
+            profileFriendPic="./images/cheems.jpg"
+            follows="follows you"
+          />
+          <SidebarRowBottom
+            friendUsername="Minh"
+            profileFriendPic="./images/cat_2.jpg"
+            follows="follows you"
+          />
+          <SidebarRowBottom
+            friendUsername="PB"
+            profileFriendPic="./images/cheems_2.jpg"
+            follows="follows you"
+          />
+        </ContentRight>
       </Section>
     </Container>
   );
@@ -44,6 +88,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 `;
 
 const Section = styled.div`
@@ -58,7 +103,6 @@ const Section = styled.div`
 const ContentLeft = styled.div`
   width: 612px;
   //   background-color: gray;
-  height: calc(100vh - 35px);
 `;
 
 const ContentRight = styled.div`
@@ -66,7 +110,7 @@ const ContentRight = styled.div`
   max-width: 293px;
   margin-left: 30px;
   height: calc(100vh - 35px);
-  background-color: lightgreen;
+  // background-color: lightgreen;
   left: 934.1px;
 `;
 
