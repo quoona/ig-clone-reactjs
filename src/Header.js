@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-const-assign */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
@@ -7,8 +9,9 @@ import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { Avatar, IconButton, makeStyles } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 function Header() {
   return (
     <Container>
@@ -43,6 +46,9 @@ function Header() {
           </IconButton>
           <IconButton>
             <Avatar src="./images/cat.jpg" />
+          </IconButton>
+          <IconButton>
+            <MeetingRoomIcon />
           </IconButton>
         </MenuLeft>
       </Nav>
@@ -83,13 +89,15 @@ const SearchInput = styled.div`
   }
 `;
 
-const MenuLeft = styled.div``;
+const MenuLeft = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const Nav = styled.div`
   display: flex;
   align-items: center;
-  overflow: hidden;
-  position: fixed;
+  position: relative;
   width: 80%;
   justify-content: space-around;
 `;

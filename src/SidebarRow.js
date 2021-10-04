@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import { Avatar } from "@mui/material";
 import React from "react";
@@ -11,6 +12,7 @@ function SidebarRow({ profilePic, title, username }) {
           <b>{username}</b>
           <span>{title}</span>
         </ContentleftInfo>
+        
       </ContentTop>
 
       <ContentCenter>
@@ -35,6 +37,7 @@ const ContentleftInfo = styled.div`
 
   padding: 13px;
   margin-left: 5px;
+
   span {
     color: gray;
     font-size: 15px;
@@ -74,4 +77,14 @@ const ContentCenter = styled.div`
   }
 `;
 
-const ContentBottom = styled.div``;
+// const ContentLogout = styled.div`
+//   display: flex;
+//   margin-top: 18px;
+//   justify-content: flex-end;
+//   align-items: center;
+//   a {
+//     font-size: 13px;
+//     color: blue;
+//     text-decoration: none;
+//   }
+// `;

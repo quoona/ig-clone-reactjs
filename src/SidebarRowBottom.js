@@ -41,7 +41,6 @@ const Contentleft = styled.div``;
 const ContentleftInfo = styled.div`
   display: flex;
   flex-direction: column;
-
   padding: 13px;
   margin-left: 5px;
   span {
@@ -52,5 +51,3 @@ const ContentleftInfo = styled.div`
     font-size: 13px;
   }
 `;
-
-const ContentFollow = styled.div``;
